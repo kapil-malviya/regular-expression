@@ -27,7 +27,7 @@
 import re
 
 string = input('enter pattern to check : ')
-matchh = re.match(s, 'abcdefgh')
+matchh = re.match(string, 'abcdefgh')
 
 if matchh != None :
 	print('match is available at the begining of the String')
@@ -52,7 +52,7 @@ else :
 import re
 
 string = input('enter pattern to check : ')
-matchh = re.fullmatch(s, 'abcdefgh ij')
+matchh = re.fullmatch(string, 'abcdefgh ij')
 
 if matchh != None :
 	print('full string matched')     # =>> abcdefgh ij
