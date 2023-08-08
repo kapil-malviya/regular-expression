@@ -5,7 +5,7 @@
 import re
 
 string = input('enter email id : ')
-match = re.fullmatch('\w[a-zA-Z0-9_.]*@gmail[.]com', s)
+match = re.fullmatch('\w[a-zA-Z0-9_.]*@gmail[.]com', string)
 
 # match = re.fullmatch('\w[a-zA-Z0-9_.]*@(gmail|rediffmail)[.]com', string)
 # match = re.fullmatch('\w[a-zA-Z0-9_.]*@[a-z0-9]+[.]com', string)   =>> ___@tv9.com
