@@ -11,11 +11,11 @@
 
 import re
 
-s = input('enter the pattern to search : ')
-m = re.search(s, 'abaabaaab')
-if m != None :
+string = input('enter the pattern to search : ')
+match = re.search(s, 'abaabaaab')
+if match != None :
 	print('match is available')
-	print('first occurrence with start indes : {} and end index : {}'.format(m.start(), m.end()))
+	print('first occurrence with start indes : {} and end index : {}'.format(match.start(), match.end()))
 else :
 	print('match is not available')
 '''
@@ -31,9 +31,9 @@ else :
 
 import re
 
-l = re.findall('[0-9]', 'a7b9K8xx')
+listt = re.findall('[0-9]', 'a7b9K8xx')
 
-print(l)     #  ['7', '9', '8']
+print(listt)     #  ['7', '9', '8']
 
 
 '''
@@ -52,5 +52,5 @@ import re
 
 #matcher = re.finditer('\d', 'a7bk9z6')     # only digit
 matcher = re.finditer('\D', 'a7bk9z6')      # except digits
-for m in matcher :
-	print('start index : {} end index : {} group : {}'.format(m.start(), m.end(), m.group()))
+for match in matcher :
+	print('start index : {} end index : {} group : {}'.format(match.start(), match.end(), match.group()))
