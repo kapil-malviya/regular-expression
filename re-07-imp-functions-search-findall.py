@@ -12,7 +12,7 @@
 import re
 
 string = input('enter the pattern to search : ')
-match = re.search(s, 'abaabaaab')
+match = re.search(string, 'abaabaaab')
 if match != None :
 	print('match is available')
 	print('first occurrence with start indes : {} and end index : {}'.format(match.start(), match.end()))
