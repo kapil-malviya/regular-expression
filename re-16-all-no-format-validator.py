@@ -3,9 +3,9 @@
 
 import re
 
-s = input("Enter Mobile Number : ")
-m = re.fullmatch("(0|91)?[6-9][0-9]{9}", s)
-if m != None :
+string = input("Enter Mobile Number : ")
+match = re.fullmatch("(0|91)?[6-9][0-9]{9}", string)
+if match != None :
 	print("Valid Mobile Number")
 else :
 	print("Invalid Mobile Number")
