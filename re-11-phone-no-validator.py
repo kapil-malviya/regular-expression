@@ -16,9 +16,9 @@
 
 import re
 
-n = input('enter mobile no. : ')
-m = re.fullmatch('[6-9]\d{9}', n)
-if m != None :
+number = input('enter mobile no. : ')
+match = re.fullmatch('[6-9]\d{9}', n)
+if match != None :
 	print('valid mobile number')
 else :
 	print('invalid mobile number')
@@ -34,15 +34,15 @@ else :
 
 import re
 
-f1 = open('numbers.txt', 'r')
+file1 = open('numbers.txt', 'r')
 
-f2 = open('numbersoutput.txt', 'w')
+file2 = open('numbersoutput.txt', 'w')
 
-for line in f1 :
+for line in file1 :
 	listt = re.findall('[6-9]\d{9}', line)
 	for number in listt :
-		f2.write(number+"\n")
+		file2.write(number+"\n")
 
 print('extracted all mobile numbers into numbersoutput.txt')
-f1.close()
-f2.close()
+file1.close()
+file2.close()
