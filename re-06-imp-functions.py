@@ -26,10 +26,10 @@
 
 import re
 
-s = input('enter pattern to check : ')
-m = re.match(s, 'abcdefgh')
+string = input('enter pattern to check : ')
+matchh = re.match(s, 'abcdefgh')
 
-if m != None :
+if matchh != None :
 	print('match is available at the begining of the String')
 	print('start index {} and end index : {}'.format(m.start(), m.end()))
 else :
@@ -51,10 +51,10 @@ else :
 
 import re
 
-s = input('enter pattern to check : ')
-m = re.fullmatch(s, 'abcdefgh ij')
+string = input('enter pattern to check : ')
+matchh = re.fullmatch(s, 'abcdefgh ij')
 
-if m != None :
+if matchh != None :
 	print('full string matched')     # =>> abcdefgh ij
 else :
 	print('full string not matched')
