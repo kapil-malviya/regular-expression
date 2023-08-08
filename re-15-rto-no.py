@@ -4,9 +4,9 @@
 
 import re
 
-s = input("Enter Vehicle Registration Number : ")
-m = re.fullmatch("MP[0-6][0-9][A-Z]{2}\d{4}", s)
-if m != None :
+string = input("Enter Vehicle Registration Number : ")
+match = re.fullmatch("MP[0-6][0-9][A-Z]{2}\d{4}", string)
+if match != None :
 	print("Valid Vehicle Registration Number");
 else :
 	print("Invalid Vehicle Registration Number") 
