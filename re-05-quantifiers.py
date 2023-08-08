@@ -19,8 +19,8 @@ import re
 
 matcher = re.finditer('a{2,3}', 'abaabdaaabaa')
 
-for m in matcher :
-	print('start : {},  group : {}'.format(m.start(), m.group()))
+for match in matcher :
+	print('start : {},  group : {}'.format(match.start(), match.group()))
 
 
 '''
