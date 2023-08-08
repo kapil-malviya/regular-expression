@@ -22,10 +22,10 @@ import re
 
 string = input('enter identifier to validate : ')
 
-match = re.fullmatch('[a-k][0369][a-zA-Z0-9#]*', s)
+match = re.fullmatch('[a-k][0369][a-zA-Z0-9#]*', string)
 
 if match != None :
-	print(s, 'is valid Anaconda identifier')
+	print(string, 'is valid Anaconda identifier')
 else :
-	print(s, 'is not a valid Anaconda identifier')
+	print(string, 'is not a valid Anaconda identifier')
 
