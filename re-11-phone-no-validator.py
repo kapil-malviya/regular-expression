@@ -17,7 +17,7 @@
 import re
 
 number = input('enter mobile no. : ')
-match = re.fullmatch('[6-9]\d{9}', n)
+match = re.fullmatch('[6-9]\d{9}', number)
 if match != None :
 	print('valid mobile number')
 else :
